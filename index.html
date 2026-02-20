@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HeartBridge connects people from around the world to meet, chat, and build meaningful relationships." />
+  <title>HeartBridge | Meet and Mingle Worldwide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#" class="brand" aria-label="HeartBridge Home">
+        <span class="brand-dot"></span>
+        HeartBridge
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+      <ul id="primary-navigation" class="nav-links">
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#members">Members</a></li>
+        <li><a href="#hub">App Hub</a></li>
+        <li><a href="#join" class="btn btn-small">Join Free</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">Global Dating Platform</p>
+        <h1>Meet genuine people from every corner of the world.</h1>
+        <p class="lead">HeartBridge helps singles discover meaningful connections through smart matching, verified profiles, and thoughtful conversations.</p>
+        <div class="hero-actions">
+          <a href="#join" class="btn">Start Meeting People</a>
+          <a href="#members" class="btn btn-ghost">Browse Community</a>
+        </div>
+        <ul class="stats">
+          <li><strong>2.4M+</strong><span>Members</span></li>
+          <li><strong>120+</strong><span>Countries</span></li>
+          <li><strong>89%</strong><span>Positive Match Rate</span></li>
+        </ul>
+      </div>
+      <div class="hero-card" aria-label="Featured members preview">
+        <h2>Tonight's highlighted matches</h2>
+        <article>
+          <img src="https://i.pravatar.cc/80?img=10" alt="Profile picture of Ana" class="member-photo" loading="lazy" />
+          <div>
+            <h3>Ana, 29</h3>
+            <p>Lisbon, Portugal</p>
+            <span>Loves cooking and city walks</span>
+          </div>
+        </article>
+        <article>
+          <img src="https://i.pravatar.cc/80?img=12" alt="Profile picture of Jordan" class="member-photo" loading="lazy" />
+          <div>
+            <h3>Jordan, 33</h3>
+            <p>Toronto, Canada</p>
+            <span>Traveler and photography fan</span>
+          </div>
+        </article>
+        <article>
+          <img src="https://i.pravatar.cc/80?img=5" alt="Profile picture of Rina" class="member-photo" loading="lazy" />
+          <div>
+            <h3>Rina, 27</h3>
+            <p>Tokyo, Japan</p>
+            <span>Book clubs and weekend hikes</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="how" class="section container">
+      <div class="section-head">
+        <p class="eyebrow">How it works</p>
+        <h2>Designed for real connections, not endless swiping.</h2>
+      </div>
+      <div class="grid-three">
+        <article class="feature-card">
+          <h3>1. Build your profile</h3>
+          <p>Share your personality, interests, values, and what you're looking for in a partner.</p>
+        </article>
+        <article class="feature-card">
+          <h3>2. Get smart matches</h3>
+          <p>Our compatibility engine introduces people with aligned goals and communication styles.</p>
+        </article>
+        <article class="feature-card">
+          <h3>3. Start meaningful chats</h3>
+          <p>Use icebreakers, voice intros, and private messaging to move from hello to chemistry.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="members" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Community Snapshot</p>
+          <h2>Meet members who are ready to connect.</h2>
+        </div>
+        <div id="public-members" class="member-grid">
+          <article class="member-card">
+            <img src="https://i.pravatar.cc/96?img=21" alt="Profile picture of Maya" class="member-photo" loading="lazy" />
+            <h3>Maya, 31</h3>
+            <p>New York, USA</p>
+            <span>Entrepreneur, yoga, and jazz nights</span>
+          </article>
+          <article class="member-card">
+            <img src="https://i.pravatar.cc/96?img=14" alt="Profile picture of Omar" class="member-photo" loading="lazy" />
+            <h3>Omar, 35</h3>
+            <p>Cairo, Egypt</p>
+            <span>Chef, football, and language exchange</span>
+          </article>
+          <article class="member-card">
+            <img src="https://i.pravatar.cc/96?img=30" alt="Profile picture of Lucia" class="member-photo" loading="lazy" />
+            <h3>Lucia, 28</h3>
+            <p>Buenos Aires, Argentina</p>
+            <span>Dancer, coffee lover, and art museums</span>
+          </article>
+          <article class="member-card">
+            <img src="https://i.pravatar.cc/96?img=59" alt="Profile picture of Kai" class="member-photo" loading="lazy" />
+            <h3>Kai, 30</h3>
+            <p>Sydney, Australia</p>
+            <span>Surfing, startup life, and live music</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="join" class="section cta">
+      <div class="container cta-wrap">
+        <div>
+          <p class="eyebrow">Create Account</p>
+          <h2>Launch your profile and start meeting people.</h2>
+        </div>
+        <form id="register-form" class="join-form" novalidate>
+          <label for="register-name">Name</label>
+          <input id="register-name" name="name" type="text" placeholder="Your name" required />
+
+          <label for="register-email">Email</label>
+          <input id="register-email" name="email" type="email" placeholder="you@example.com" required />
+
+          <label for="register-country">Country</label>
+          <input id="register-country" name="country" type="text" placeholder="USA" required />
+
+          <label for="register-password">Password</label>
+          <input id="register-password" name="password" type="password" minlength="6" placeholder="At least 6 characters" required />
+
+          <button type="submit" class="btn">Create Free Account</button>
+          <p id="register-msg" class="form-msg" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section container auth-block">
+      <div class="section-head">
+        <p class="eyebrow">Returning Member</p>
+        <h2>Sign in to your account.</h2>
+      </div>
+      <form id="login-form" class="join-form auth-form" novalidate>
+        <label for="login-email">Email</label>
+        <input id="login-email" name="email" type="email" placeholder="you@example.com" required />
+
+        <label for="login-password">Password</label>
+        <input id="login-password" name="password" type="password" required />
+
+        <button type="submit" class="btn">Sign In</button>
+        <p id="login-msg" class="form-msg" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="hub" class="section section-alt app-hub hidden">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Member Hub</p>
+          <h2>Manage your profile, discover matches, and chat privately.</h2>
+        </div>
+
+        <div class="hub-grid">
+          <article class="panel">
+            <h3>Your profile</h3>
+            <form id="profile-form" class="join-form" novalidate>
+              <label for="profile-name">Name</label>
+              <input id="profile-name" name="name" type="text" required />
+
+              <label for="profile-country">Country</label>
+              <input id="profile-country" name="country" type="text" required />
+
+              <label for="profile-photo">Profile photo URL</label>
+              <input id="profile-photo" name="photoUrl" type="url" placeholder="https://example.com/photo.jpg" />
+
+              <label for="profile-interests">Interests (comma separated)</label>
+              <input id="profile-interests" name="interests" type="text" placeholder="Travel, Music, Fitness" />
+
+              <label for="profile-bio">Bio</label>
+              <textarea id="profile-bio" name="bio" rows="4" placeholder="Tell others about your personality and goals."></textarea>
+
+              <button type="submit" class="btn">Save Profile</button>
+              <p id="profile-msg" class="form-msg" aria-live="polite"></p>
+            </form>
+          </article>
+
+          <article class="panel">
+            <h3>Find members</h3>
+            <form id="search-form" class="search-form" novalidate>
+              <input id="search-query" name="query" type="text" placeholder="Search by name or bio" />
+              <input id="search-country" name="country" type="text" placeholder="Country" />
+              <input id="search-interest" name="interest" type="text" placeholder="Interest" />
+              <button type="submit" class="btn btn-small">Search</button>
+            </form>
+            <div id="member-results" class="results-grid"></div>
+          </article>
+        </div>
+
+        <article class="panel message-panel">
+          <div class="message-head">
+            <h3>Private messaging</h3>
+            <p id="chat-with">Select a member to start chatting.</p>
+          </div>
+          <div id="message-thread" class="thread"></div>
+          <form id="message-form" class="message-form" novalidate>
+            <input id="message-input" name="message" type="text" placeholder="Write a message" required />
+            <button type="submit" class="btn btn-small">Send</button>
+          </form>
+          <p id="message-msg" class="form-msg" aria-live="polite"></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>� 2026 HeartBridge. Built for global connections.</p>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
